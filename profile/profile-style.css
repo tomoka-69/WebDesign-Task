@@ -1,0 +1,13 @@
+@charset "utf-8";
+.text-pink{
+    color: #FFC0CB;
+}
+.text-blue{
+    color: aqua;
+}
+.text-green{
+    color: rgb(159, 255, 210);
+}
+.bg-yellow{
+    background-color: beige;
+}
