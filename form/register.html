@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登録フォーム</title>
+    <link rel="stylesheet" href="register-style.css">
+</head>
+
+<body>
+    <p>必要事項を入力の上、送信ボタンを押してください。</p>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>パスワード</th>
+                <th>氏名</th>
+                <th>住所</th>
+                <th>携帯電話番号</th>
+                <th>学科・学年</th>
+                <th>お得な情報・クーポン</th>
+                <th>ご意見・ご要望</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>メールアドレス:<input type="email" name="email" placeholder="xxx@morijyobi.ac.jp"></td>
+                <td>パスワード:<input type="password" name="user_bw"></td>
+                <td>姓:<input type="text" name="user_last_name"> 名:<input type="text" name="user_first_name"></td>
+                <td>〒:<input type="text" name="readonly" size="8" value="020-0021" readonly><br>
+                    <input type="text" name="readonly" size="8" value="岩手県盛岡市中央通３丁目"><br>
+                    <input type="text" name="address" placeholder="番地"><br>
+                    <input type="text" name="address" size="30" placeholder="建物名">
+                </td>
+                <td>携帯電話番号:<input type="tel" name="tel"></td>
+                <td><select name="blood_type" required></select>
+                    <option value="">選択してください</option>
+                    <option value="sys">システム系学科</option>
+                    <option value="biz">ビジネス系学科</option>
+                    <option value="dez">デザイン系学科</option>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
