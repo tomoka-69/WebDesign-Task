@@ -11,38 +11,62 @@
 <body>
     <p>必要事項を入力の上、送信ボタンを押してください。</p>
     <table>
-        <thead>
+        <div>
             <tr>
-                <th>ID</th>
-                <th>パスワード</th>
-                <th>氏名</th>
-                <th>住所</th>
-                <th>携帯電話番号</th>
-                <th>学科・学年</th>
-                <th>お得な情報・クーポン</th>
-                <th>ご意見・ご要望</th>
+                <td bgcolor="#ffc0cb">ID<a>必須</a></td>
+                <td bgcolor="#f8f8ff">メールアドレス:<input type="email" name="email" placeholder="xxx@morijyobi.ac.jp"></td>
             </tr>
-        </thead>
-        <tbody>
             <tr>
-                <td>メールアドレス:<input type="email" name="email" placeholder="xxx@morijyobi.ac.jp"></td>
-                <td>パスワード:<input type="password" name="user_bw"></td>
-                <td>姓:<input type="text" name="user_last_name"> 名:<input type="text" name="user_first_name"></td>
-                <td>〒:<input type="text" name="readonly" size="8" value="020-0021" readonly><br>
-                    <input type="text" name="readonly" size="8" value="岩手県盛岡市中央通３丁目"><br>
-                    <input type="text" name="address" placeholder="番地"><br>
+                <td bgcolor="#ffc0cb">パスワード<a>必須</a></td>
+                <td bgcolor="#f8f8ff">パスワード:<input type="password" name="user_bw"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffc0cb">氏名<a>必須</a></td>
+                <td bgcolor="#f8f8ff">姓:<input type="text" name="user_last_name"> 名:<input type="text" name="user_first_name"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffc0cb">住所</td>
+                <td bgcolor="#f8f8ff">〒:<input type="text" name="readonly" size="8" value="020-0021" readonly>
+                    <input type="text" name="readonly" size="8" value="岩手県盛岡市中央通３丁目">
+                    <input type="text" name="address" placeholder="番地">
                     <input type="text" name="address" size="30" placeholder="建物名">
                 </td>
-                <td>携帯電話番号:<input type="tel" name="tel"></td>
-                <td><select name="blood_type" required></select>
-                    <option value="">選択してください</option>
-                    <option value="sys">システム系学科</option>
-                    <option value="biz">ビジネス系学科</option>
-                    <option value="dez">デザイン系学科</option>
+            </tr>
+            <tr>
+                <td bgcolor="#ffc0cb">携帯電話番号<a>必須</a></td>
+                <td bgcolor="#f8f8ff">携帯電話番号:<input type="tel" name="tel"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffc0cb">学科・学年<a>必須</a></td>
+                <td bgcolor="#f8f8ff">学科:<select name="blood_type" required>
+                        <option value="0">学科を選択してください</option>
+                        <option value="sys">システム系学科</option>
+                        <option value="biz">ビジネス系学科</option>
+                        <option value="dez">デザイン系学科</option>
+                    </select>
+                    学年:<select name="blood_type" required>
+                        <option value="0">学年を選択してください</option>
+                        <option value="1">1年生</option>
+                        <option value="2">2年生</option>
+                        <option value="3">3年生</option>
+                        <option value="4">4年生</option>
+                    </select>
                 </td>
             </tr>
-        </tbody>
+            <tr>
+                <td bgcolor="#ffc0cb">お得な情報・クーポン<a>必須</a></td>
+                <td bgcolor="#f8f8ff"><label><input type="radio" name="get" value="0">受け取る</label>
+                    <label><input type="radio" name="get" value="1">受け取らない</label>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#ffc0cb">ご意見・ご要望</td>
+                <td bgcolor="#f8f8ff"><textarea name="option" rows="10" cols="50" maxlength="200"></textarea></td>
+            </tr>
+        </div>
     </table>
+    <button type="reset">入力内容をクリアする</button>
+    <button type="submit">送信</button>
 </body>
 
 </html>
