@@ -14,20 +14,22 @@
         <div>
             <tr>
                 <td bgcolor="#ffc0cb">ID<a>必須</a></td>
-                <td bgcolor="#f8f8ff">メールアドレス:<input type="email" name="email" placeholder="xxx@morijyobi.ac.jp"></td>
+                <td bgcolor="#f8f8ff"><input type="email" name="email" size="30" placeholder="xxx@morijyobi.ac.jp">
+                </td>
             </tr>
             <tr>
                 <td bgcolor="#ffc0cb">パスワード<a>必須</a></td>
-                <td bgcolor="#f8f8ff">パスワード:<input type="password" name="user_bw"></td>
+                <td bgcolor="#f8f8ff"><input type="password" name="user_bw" size="30" minlength="8"><label><input type="checkbox" name="pass">パスワードを表示する</label></td>
             </tr>
             <tr>
                 <td bgcolor="#ffc0cb">氏名<a>必須</a></td>
-                <td bgcolor="#f8f8ff">姓:<input type="text" name="user_last_name"> 名:<input type="text" name="user_first_name"></td>
+                <td bgcolor="#f8f8ff">姓:<input type="text" name="user_last_name"> 名:<input type="text"
+                        name="user_first_name"></td>
             </tr>
             <tr>
                 <td bgcolor="#ffc0cb">住所</td>
                 <td bgcolor="#f8f8ff">〒:<input type="text" name="readonly" size="8" value="020-0021" readonly>
-                    <input type="text" name="readonly" size="8" value="岩手県盛岡市中央通３丁目">
+                    <input type="text" name="readonly" size="8" value="岩手県盛岡市中央通３丁目" readonly>
                     <input type="text" name="address" placeholder="番地">
                     <input type="text" name="address" size="30" placeholder="建物名">
                 </td>
@@ -39,13 +41,13 @@
             <tr>
                 <td bgcolor="#ffc0cb">学科・学年<a>必須</a></td>
                 <td bgcolor="#f8f8ff">学科:<select name="blood_type" required>
-                        <option value="0">学科を選択してください</option>
+                        <option value="">学科を選択してください</option>
                         <option value="sys">システム系学科</option>
                         <option value="biz">ビジネス系学科</option>
                         <option value="dez">デザイン系学科</option>
                     </select>
                     学年:<select name="blood_type" required>
-                        <option value="0">学年を選択してください</option>
+                        <option value="">学年を選択してください</option>
                         <option value="1">1年生</option>
                         <option value="2">2年生</option>
                         <option value="3">3年生</option>
@@ -67,6 +69,7 @@
     </table>
     <button type="reset">入力内容をクリアする</button>
     <button type="submit">送信</button>
+    </form>
 </body>
 
 </html>
