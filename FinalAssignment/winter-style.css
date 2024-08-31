@@ -1,0 +1,32 @@
+@charset "utf-8";
+main{
+    width: 800px;
+    margin: 0 10px;
+}
+.image{
+    width: 500px;
+    margin: 0 10px;
+}
+.contents{
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+.tubaki{
+    margin-bottom: 60px;
+}
+.tubaki_img{
+    margin-top: 20px;
+}
+.roubai{
+    margin-bottom: 60px;
+}
+.roubai_img{
+    margin-top: 20px;
+}
+.nerine_img{
+    margin-top: 20px;
+}
+body{
+    background: linear-gradient(rgb(200, 250, 255),rgb(77, 172, 212));
+}

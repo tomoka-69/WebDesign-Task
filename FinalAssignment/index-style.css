@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.full {
+    min-height: 100vh;
+    background-image: url(flower.img/flowers.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+span {
+    color: rgb(168, 255, 206);
+}
+
+span#two {
+    color: rgb(160, 207, 207);
+}
+h1{
+    color: rgb(255, 147, 230);
+}
+.site{
+    color: rgb(87, 98, 217);
+}
