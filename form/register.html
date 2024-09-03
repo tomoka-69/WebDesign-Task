@@ -25,15 +25,15 @@
                 </tr>
                 <tr>
                     <td bgcolor="#ffc0cb">氏名<a>必須</a></td>
-                    <td bgcolor="#f8f8ff">姓:<input type="text" name="user_last_name" placeholder="山田"> 名:<input type="text"
+                    <td bgcolor="#f8f8ff">姓:<input type="text" name="user_last_name" placeholder="山田" required> 名:<input type="text"
                             name="user_first_name" required placeholder="太郎"></td>
                 </tr>
                 <tr>
                     <td bgcolor="#ffc0cb">住所</td>
                     <td bgcolor="#f8f8ff">〒:<input type="text" name="readonly" size="8" value="020-0021" readonly>
                         <input type="text" name="readonly" size="8" value="岩手県盛岡市中央通３丁目" readonly>
-                        <input type="text" name="address1" placeholder="番地" required>
-                        <input type="text" name="address2" size="30" placeholder="建物名" required>
+                        <input type="text" name="address1" placeholder="番地">
+                        <input type="text" name="address2" size="30" placeholder="建物名">
                     </td>
                 </tr>
                 <tr>
@@ -59,8 +59,8 @@
                 </tr>
                 <tr>
                     <td bgcolor="#ffc0cb">お得な情報・クーポン<a>必須</a></td>
-                    <td bgcolor="#f8f8ff"><label><input type="radio" name="get" value="0">受け取る</label>
-                        <label><input type="radio" name="get" value="1">受け取らない</label>
+                    <td bgcolor="#f8f8ff"><label><input type="radio" name="get" value="0" required>受け取る</label>
+                        <label><input type="radio" name="get" value="1" required>受け取らない</label>
                     </td>
                 </tr>
                 <tr>
